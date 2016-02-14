@@ -18,6 +18,17 @@ public class TreeNode<T extends Comparable<T>> {
 	 */
 	public TreeNode() {
 		super();
+	}	
+
+	/**
+	 *  
+	 * @param info
+	 */
+	public TreeNode(T info) {
+		super();
+		this.info = info;
+		this.setLeftChild(null);
+		this.setRightChild(null);
 	}
 
 	/**
@@ -82,5 +93,20 @@ public class TreeNode<T extends Comparable<T>> {
 		return "TreeNode [leftChild=" + ((null == leftChild)?null:leftChild.getInfo()) + ", info=" + info + ", rightChild=" + ((null == rightChild)?null:rightChild.getInfo()) + "]";
 	}
 	
+	/**
+	 * method to check if the node has left child or node
+	 * @return true if leftChild is not null else return false 
+	 */
+	public boolean hasLeftChild(){
+		return  (null != this.getLeftChild());
+	}
+	
+	/**
+	 * method to check if the node has left child or node
+	 * @return true if rightChild is not null else return false 
+	 */
+	public boolean hasRightChild() {
+		return (null != this.getRightChild());
+	}
 	
 }
