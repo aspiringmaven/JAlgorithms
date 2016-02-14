@@ -88,7 +88,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	private void insertNode(TreeNode<T>root,TreeNode<T> node) {
 		if (root.getInfo().compareTo(node.getInfo()) > 0) { /*root is greater*/
 			if(null != root.getLeftChild() ) {
-				insert(root.getLeftChild(), node);
+				insertNode(root.getLeftChild(), node);
 			} else {
 				root.setLeftChild(node);				
 			}
