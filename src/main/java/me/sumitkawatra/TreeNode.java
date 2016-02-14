@@ -94,7 +94,7 @@ public class TreeNode<T extends Comparable<T>> {
 	}
 	
 	/**
-	 * method to check if the node has left child or node
+	 * method to check if the node has left child or not
 	 * @return true if leftChild is not null else return false 
 	 */
 	public boolean hasLeftChild(){
@@ -102,7 +102,7 @@ public class TreeNode<T extends Comparable<T>> {
 	}
 	
 	/**
-	 * method to check if the node has left child or node
+	 * method to check if the node has left child or not
 	 * @return true if rightChild is not null else return false 
 	 */
 	public boolean hasRightChild() {
