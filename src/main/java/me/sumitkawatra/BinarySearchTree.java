@@ -129,4 +129,24 @@ public class BinarySearchTree<T extends Comparable<T>> {
 			}
 		}
 	}
+	
+	/**
+	 * To search Node from BinarySearchTree  
+	 * @param root
+	 * @param info
+	 * @return
+	 */
+	public TreeNode<T> searchNode(TreeNode<T> root, T info) {
+		if(null == root || null == info) {
+			return new TreeNode<T>(null);
+		} else {
+			if(0 == root.getInfo().compareTo(info)) {
+				return root;
+			} else if(root.getInfo().compareTo(info) > 0) {
+				return searchNode(root.getLeftChild(), info);
+			} else {
+				return searchNode(root.getRightChild(), info);
+			}
+		}		
+	}
 }
