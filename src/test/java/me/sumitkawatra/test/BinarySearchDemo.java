@@ -3,8 +3,8 @@
  */
 package me.sumitkawatra.test;
 
-import me.sumitkawatra.BinarySearchTree;
-import me.sumitkawatra.TreeNode;
+import me.sumitkawatra.ds.node.TreeNode;
+import me.sumitkawatra.ds.tree.BinarySearchTree;
 
 /**
  * @author Sumit Kawatra
@@ -42,9 +42,9 @@ public class BinarySearchDemo {
 		rootNode = tree.insert(rootNode, new TreeNode<Integer>(-122));
 		
 		
-		//tree.inOrderTraversal(rootNode);
-		tree.levelOrderTraversal(rootNode);
-		
+		tree.inOrderTraversal(rootNode);
+		//tree.levelOrderTraversal(rootNode);
+		System.out.println(tree.searchNode(rootNode, 55));
 		System.out.println("Done demo1");
 	}
 }

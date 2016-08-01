@@ -1,7 +1,7 @@
 /**
  * Feel free to use, reuse and abuse this code
  */
-package me.sumitkawatra;
+package me.sumitkawatra.ds.node;
 
 /**
  * @author Sumit Kawatra

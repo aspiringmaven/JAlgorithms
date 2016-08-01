@@ -1,9 +1,11 @@
 /**
  * Feel free to use, reuse and abuse this code.
  */
-package me.sumitkawatra;
+package me.sumitkawatra.ds.tree;
 
 import java.util.LinkedList;
+
+import me.sumitkawatra.ds.node.TreeNode;
 
 /**
  * @author Sumit Kawatra
@@ -148,5 +150,30 @@ public class BinarySearchTree<T extends Comparable<T>> {
 				return searchNode(root.getRightChild(), info);
 			}
 		}		
+	}
+	
+	/**
+	 * method to delete node from binary search tree 
+	 * @param root
+	 * @param info
+	 * @return
+	 */
+	public TreeNode<T> delete(TreeNode<T> root, T info) {
+		if(null == root || info == null) {
+			return root;
+		} else {
+			return deleteNode(root, info);
+		}		
+	}
+	
+	private TreeNode<T> deleteNode(TreeNode<T> root, T info) {
+		if(0 == root.getInfo().compareTo(info)) {
+			
+		} else if( 0 > root.getInfo().compareTo(info) ) {
+			
+		} else {
+			
+		}
+		return root;
 	}
 }
